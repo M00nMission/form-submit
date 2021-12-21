@@ -1,3 +1,4 @@
+/* eslint-disable */
 if (typeof window !== 'undefined') {
     document.forms.fileForm.addEventListener("submit", event => {
     event.preventDefault()
