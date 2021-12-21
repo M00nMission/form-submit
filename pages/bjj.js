@@ -22,8 +22,8 @@ if ( typeof window !== 'undefined') {
 export default function BJJ() {
     return(
         <>
-            <form name="BJJ" data-netlify="true">
-            <input type="hidden" name="BJJ" value="BJJ" />
+            <form name="BJJ" data-netlify-recaptcha="true" data-netlify="true" >
+                <input type="hidden" name="BJJ" value="BJJ" />
             <p>
                 <label>
                 <span>Name:</span>
@@ -37,6 +37,8 @@ export default function BJJ() {
                 </label>
             </p>
             <button type="submit">Submit</button>
+                <br />
+                <div data-netlify-recaptcha="true"></div>
             </form>
             <p className="result"></p>
         </>
