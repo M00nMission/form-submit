@@ -26,19 +26,22 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <h1>Hi there</h1>
-      <form name="contact" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact" />
+      <form name="contact" data-netlify="true">
+        <input type="hidden" name="index" value="index" />
         <p>
-          <label htmlFor='name'>Name</label>
-          <input type="text" id="name" name="name" />
+          <label>Name
+            <input type="text" id="name" name="name" />
+          </label>
         </p>
         <p>
-          <label htmlFor='email'>Email</label>
-          <input type="text" id="email" name="email" />
+          <label>Email
+            <input type="text" id="email" name="email" />
+          </label>
         </p>
         <p>
-          <label htmlFor='message'>Message</label>
-          <textarea id="message" name="message"></textarea>
+          <label>Message
+            <textarea id="message" name="message"></textarea>
+          </label>
         </p>
         <input type="file" accept='mp4' />
         <button type="submit">Submit</button>
