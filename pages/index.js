@@ -21,6 +21,7 @@ export default function Home() {
           <label htmlFor='message'>Message</label>
           <textarea id="message" name="message"></textarea>
         </p>
+        <input type="file" accept='mp4' />
         <button type="submit">Submit</button>
       </form>
     </div>
