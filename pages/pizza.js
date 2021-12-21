@@ -17,23 +17,20 @@ if (typeof window !== 'undefined') {
 export default function Pizza() {
     return (
         <>
-            <form name="fileForm" method="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="contact" />
-                <p>
-                    {/* <label> */}
-                    <label htmlFor='name'>Name</label>
-                        <span></span>
-                        <input name="name" id="name" type="text"/>
-                    {/* </label> */}
-                </p>
-                <p>
-                    {/* <label> */}
-                        <label htmlFor='media'>Media</label>
-                        <span></span>
-                        <input name="media" id="media" type="file" accept="mp4"/>
-                    {/* </label> */}
-                </p>
-                <button type="submit">Submit</button>
+            <form name="fileForm" data-netlify="true">
+            <p>
+                <label>
+                <span>Name:</span>
+                <input name="name" type="text"/>
+                </label>
+            </p>
+            <p>
+                <label>
+                <span>Add file:</span>
+                <input name="file" type="file"/>
+                </label>
+            </p>
+            <button>Submit</button>
             </form>
             <p class="result"></p>
         </>
