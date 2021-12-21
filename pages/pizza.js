@@ -3,7 +3,7 @@ if (typeof window !== 'undefined') {
     document.forms.fileForm.addEventListener("submit", event => {
     event.preventDefault()
     const result = document.querySelector(".result")
-    fetch("/", {
+    fetch("/pizza", {
       body: new FormData(event.target),
       headers: { "Content-Type": "multipart/form-data" },
       method: "POST",
